@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Products</title>
+<title>Our Products - JMD Enterprises</title>
 
 <style>
 
@@ -17,13 +17,20 @@ color:white;
 padding:20px;
 }
 
+.category{
+margin-top:40px;
+font-size:24px;
+color:#333;
+}
+
 .product{
 background:white;
 margin:20px auto;
 padding:20px;
-max-width:500px;
+max-width:600px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
+text-align:left;
 }
 
 button{
@@ -35,6 +42,10 @@ border-radius:5px;
 cursor:pointer;
 }
 
+button:hover{
+background:#009f77;
+}
+
 </style>
 
 </head>
@@ -43,33 +54,87 @@ cursor:pointer;
 
 <h1>Our Products</h1>
 
+<h2 class="category">Detergent Powder</h2>
+
 <div class="product">
-<h3>OP Shine Detergent Powder</h3>
-<p>1kg: ₹36-65</p>
-<button>Order on WhatsApp</button>
+<h3>1 KG Detergent</h3>
+<p>Normal: ₹36 – ₹45</p>
+<p>Advance: ₹42 – ₹55</p>
+<p>Premium: ₹55 – ₹65</p>
+<p>Laundry Special: ₹52 – ₹62</p>
+<button onclick="order()">Order on WhatsApp</button>
 </div>
+
+<div class="product">
+<h3>3 KG Detergent</h3>
+<p>Advance: ₹100 – ₹110</p>
+<p>Premium: ₹115 – ₹120</p>
+<button onclick="order()">Order on WhatsApp</button>
+</div>
+
+<div class="product">
+<h3>Loose Detergent (Minimum 50 KG)</h3>
+<p>Basic: ₹34 – ₹43</p>
+<p>Advance: ₹40 – ₹53</p>
+<p>Premium: ₹52 – ₹58</p>
+<p>Laundry Special: ₹50 – ₹60</p>
+<button onclick="order()">Order on WhatsApp</button>
+</div>
+
+
+<h2 class="category">Liquid Cleaning Products</h2>
 
 <div class="product">
 <h3>OP Shine Hand Wash</h3>
-<p>500ml: ₹38-48</p>
-<button>Order on WhatsApp</button>
+<p>500ml: ₹38 – ₹48</p>
+<p>Fragrance: Rose / Natural / Lemon</p>
+<button onclick="order()">Order on WhatsApp</button>
 </div>
 
 <div class="product">
-<h3>OP Shine Toilet Cleaner</h3>
-<p>500ml: ₹28-35</p>
-<button>Order on WhatsApp</button>
+<h3>Liquid Detergent</h3>
+<p>1L Basic: ₹55 – ₹65</p>
+<p>1L Premium: ₹65 – ₹75</p>
+<button onclick="order()">Order on WhatsApp</button>
+</div>
+
+
+<h2 class="category">Cleaning Products</h2>
+
+<div class="product">
+<h3>Toilet Cleaner</h3>
+<p>500ml: ₹28 – ₹35</p>
+<p>1L: ₹40 – ₹50</p>
+<button onclick="order()">Order on WhatsApp</button>
 </div>
 
 <div class="product">
-<h3>OP Shine Dish Wash</h3>
-<p>500ml: ₹35-45</p>
-<button>Order on WhatsApp</button>
+<h3>Dish Wash</h3>
+<p>500ml: ₹35 – ₹45</p>
+<button onclick="order()">Order on WhatsApp</button>
+</div>
+
+
+<h2 class="category">Other Products</h2>
+
+<div class="product">
+<h3>Fabric Whitener</h3>
+<p>1L Normal: ₹25 – ₹30</p>
+<p>1L Advance: ₹40 – ₹50</p>
+<button onclick="order()">Order on WhatsApp</button>
 </div>
 
 <br><br>
 
 <a href="index.html">⬅ Back to Home</a>
+
+<script>
+
+function order(){
+window.open("https://wa.me/918860710090?text=Hello%20I%20want%20to%20order%20your%20product");
+}
+
+</script>
 
 </body>
 </html>
