@@ -1,77 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Products - JMD Enterprises</title>
+<title>Our Products</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0a3d62;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#1e3799;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:150px;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+</style>
 </head>
 
 <body>
 
+<header>
 <h1>Our Products</h1>
+</header>
 
-<h2>Detergent Powder</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="raw-material.html">Raw Material</a>
+</nav>
 
-<div>
-<h3>Detergent</h3>
-<img src="detergent.jpg" width="200">
+<div class="products">
+
+<div class="card">
+<img src="detergent.jpg">
+<h3>Detergent Powder</h3>
 </div>
 
-<div>
-<h3>Loss Detergent Powder</h3>
-<img src="loss detergent powder.jpg" width="200">
+<div class="card">
+<img src="loss detergent powder.jpg">
+<h3>Loose Detergent</h3>
 </div>
 
-<hr>
-
-<h2>Dishwash</h2>
-
-<div>
+<div class="card">
+<img src="dishwash.jpg">
 <h3>Dishwash Liquid</h3>
-<img src="dishwash.jpg" width="200">
 </div>
 
-<hr>
-
-<h2>Fabric Whitener</h2>
-
-<div>
+<div class="card">
+<img src="fabricwhitener.jpg">
 <h3>Fabric Whitener</h3>
-<img src="fabricwhitener.jpg" width="200">
 </div>
 
-<hr>
-
-<h2>Floor Cleaner</h2>
-
-<div>
+<div class="card">
+<img src="floor cleaner .jpg">
 <h3>Floor Cleaner</h3>
-<img src="floor cleaner .jpg" width="200">
 </div>
 
-<hr>
-
-<h2>Glass Cleaner</h2>
-
-<div>
+<div class="card">
+<img src="glass cleaner .jpg">
 <h3>Glass Cleaner</h3>
-<img src="glass cleaner .jpg" width="200">
 </div>
 
-<hr>
-
-<h2>Hand Wash</h2>
-
-<div>
+<div class="card">
+<img src="handwash.jpg">
 <h3>Hand Wash</h3>
-<img src="handwash.jpg" width="200">
 </div>
 
-<hr>
-
-<h2>Room Spray</h2>
-
-<div>
+<div class="card">
+<img src="room spray.jpg">
 <h3>Room Spray</h3>
-<img src="room spray.jpg" width="200">
+</div>
+
 </div>
 
 </body>
