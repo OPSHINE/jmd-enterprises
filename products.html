@@ -1,145 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Products</title>
-
-<style>
-
-body{
-font-family:Arial;
-background:linear-gradient(120deg,#ff9966,#ff5e62);
-margin:0;
-text-align:center;
-}
-
-h1{
-padding:30px;
-color:white;
-}
-
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:30px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
-}
-
-img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-}
-
-button{
-padding:10px 20px;
-border:none;
-background:#00c896;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#009f77;
-}
-
-a{
-display:block;
-margin:30px;
-font-weight:bold;
-}
-
-</style>
+<title>Our Products - JMD Enterprises</title>
 </head>
 
 <body>
 
 <h1>Our Products</h1>
 
-<div class="container">
+<h2>Detergent Powder</h2>
 
-<div class="card">
-<img src="images/detergent.jpg">
-<h3>Detergent Powder</h3>
-<p>1kg Normal ₹36-45</p>
-<p>1kg Advance ₹42-55</p>
-<p>1kg Premium ₹55-65</p>
-<button onclick="order()">Order</button>
+<div>
+<h3>Detergent</h3>
+<img src="detergent.jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/handwash.jpg">
-<h3>Hand Wash</h3>
-<p>500ml ₹38-48</p>
-<button onclick="order()">Order</button>
+<div>
+<h3>Loss Detergent Powder</h3>
+<img src="loss detergent powder.jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/toilet.jpg">
-<h3>Toilet Cleaner</h3>
-<p>500ml ₹28-35</p>
-<button onclick="order()">Order</button>
+<hr>
+
+<h2>Dishwash</h2>
+
+<div>
+<h3>Dishwash Liquid</h3>
+<img src="dishwash.jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/dishwash.jpg">
-<h3>Dish Wash</h3>
-<p>500ml ₹35-45</p>
-<button onclick="order()">Order</button>
+<hr>
+
+<h2>Fabric Whitener</h2>
+
+<div>
+<h3>Fabric Whitener</h3>
+<img src="fabricwhitener.jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/floor.jpg">
+<hr>
+
+<h2>Floor Cleaner</h2>
+
+<div>
 <h3>Floor Cleaner</h3>
-<p>500ml / 1L Available</p>
-<button onclick="order()">Order</button>
+<img src="floor cleaner .jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/glass.jpg">
+<hr>
+
+<h2>Glass Cleaner</h2>
+
+<div>
 <h3>Glass Cleaner</h3>
-<p>500ml / 1L Available</p>
-<button onclick="order()">Order</button>
+<img src="glass cleaner .jpg" width="200">
 </div>
 
-<div class="card">
-<img src="images/roomspray.jpg">
+<hr>
+
+<h2>Hand Wash</h2>
+
+<div>
+<h3>Hand Wash</h3>
+<img src="handwash.jpg" width="200">
+</div>
+
+<hr>
+
+<h2>Room Spray</h2>
+
+<div>
 <h3>Room Spray</h3>
-<p>500ml Available</p>
-<button onclick="order()">Order</button>
+<img src="room spray.jpg" width="200">
 </div>
-
-<div class="card">
-<img src="images/soap.jpg">
-<h3>Handmade Soap</h3>
-<p>50g / 125g</p>
-<button onclick="order()">Order</button>
-</div>
-
-</div>
-
-<a href="index.html">⬅ Back to Home</a>
-
-<script>
-
-function order(){
-window.open("https://wa.me/918860710090?text=Hello%20I%20want%20to%20order%20your%20product");
-}
-
-</script>
 
 </body>
 </html>
