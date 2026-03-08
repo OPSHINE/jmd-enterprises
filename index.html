@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="hi">
 
@@ -20,6 +20,7 @@ font-family:Arial, Helvetica, sans-serif;
 
 body{
 background:#f5f7fb;
+overflow-x:hidden;
 }
 
 /* HERO SECTION */
@@ -50,7 +51,7 @@ overflow:hidden;
 
 }
 
-/* FACTORY BACKGROUND IMAGE */
+/* FACTORY BACKGROUND */
 
 .hero::after{
 
@@ -59,16 +60,16 @@ content:"";
 position:absolute;
 
 top:0;
-
 left:0;
 
 width:100%;
-
 height:100%;
 
 background:url("factory.png") center/cover no-repeat;
 
-opacity:0.15;
+opacity:0.18;
+
+z-index:0;
 
 }
 
@@ -81,7 +82,6 @@ content:"";
 position:absolute;
 
 width:200%;
-
 height:200%;
 
 background-image:radial-gradient(white 2px, transparent 2px);
@@ -91,6 +91,8 @@ background-size:50px 50px;
 opacity:0.2;
 
 animation:powderMove 25s linear infinite;
+
+z-index:0;
 
 }
 
@@ -106,6 +108,15 @@ transform:translateY(-200px);
 
 }
 
+/* TEXT ABOVE BACKGROUND */
+
+.hero *{
+
+position:relative;
+z-index:2;
+
+}
+
 /* TEXT STYLE */
 
 .hero h3{
@@ -118,7 +129,7 @@ margin-bottom:15px;
 
 .hero h1{
 
-font-size:42px;
+font-size:44px;
 
 margin-bottom:20px;
 
@@ -142,7 +153,7 @@ margin-bottom:40px;
 
 display:flex;
 
-gap:20px;
+gap:25px;
 
 flex-wrap:wrap;
 
@@ -154,23 +165,45 @@ justify-content:center;
 
 .btn{
 
-background:#ffcc00;
+background:linear-gradient(45deg,#ffcc00,#ffd633);
 
 color:#000;
 
-padding:15px 32px;
+padding:16px 36px;
 
-border-radius:30px;
+border-radius:40px;
 
 text-decoration:none;
 
 font-weight:bold;
 
+display:inline-block;
+
+position:relative;
+
+overflow:hidden;
+
 transition:0.3s;
 
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
 
-animation:popup 0.6s ease;
+animation:popup 0.7s ease;
+
+}
+
+/* BUTTON POPUP */
+
+@keyframes popup{
+
+0%{
+transform:scale(0.7);
+opacity:0;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
 
 }
 
@@ -178,33 +211,37 @@ animation:popup 0.6s ease;
 
 .btn:hover{
 
-transform:translateY(-5px) scale(1.05);
+transform:translateY(-6px) scale(1.05);
 
-box-shadow:0 12px 25px rgba(0,0,0,0.3);
-
-background:#ffd633;
+box-shadow:0 14px 35px rgba(0,0,0,0.35);
 
 }
 
-/* POPUP ANIMATION */
+/* SHINE EFFECT */
 
-@keyframes popup{
+.btn::before{
 
-0%{
+content:"";
 
-transform:scale(0.8);
+position:absolute;
 
-opacity:0;
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent);
+
+transition:0.6s;
 
 }
 
-100%{
+.btn:hover::before{
 
-transform:scale(1);
-
-opacity:1;
-
-}
+left:100%;
 
 }
 
