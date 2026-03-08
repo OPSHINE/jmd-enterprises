@@ -22,7 +22,6 @@ font-weight:bold;
 .greeting{
 font-size:22px;
 margin-top:10px;
-animation:fadeIn 2s;
 }
 
 .container{
@@ -54,51 +53,12 @@ transition:0.4s;
 
 .mainbtn:hover{
 transform:scale(1.1);
-box-shadow:0 0 20px rgba(0,0,0,0.5);
-}
-
-.popup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-justify-content:center;
-align-items:center;
-}
-
-.popup-content{
-background:white;
-color:black;
-padding:30px;
-border-radius:10px;
-max-width:500px;
-text-align:center;
-animation:pop 0.4s;
-}
-
-.close{
-float:right;
-cursor:pointer;
-font-size:20px;
 }
 
 footer{
 margin-top:40px;
 padding:20px;
 font-size:14px;
-}
-
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
-}
-
-@keyframes pop{
-from{transform:scale(0.5)}
-to{transform:scale(1)}
 }
 
 </style>
@@ -127,97 +87,41 @@ JMD Enterprises (OP Shine)
 <h2>Aapka Apna Hindustani Brand</h2>
 
 <p>
-Welcome to <b>JMD Enterprises (OP Shine)</b>.
-We are manufacturer and supplier of high quality detergent,
-cleaning products and industrial raw materials.
+Welcome to <b>JMD Enterprises (OP Shine)</b>.  
+We manufacture detergent powder, hand wash, toilet cleaner,
+dish wash, liquid detergent and cleaning chemicals.
 </p>
 
 <p>
-Our mission is to provide reliable, affordable and quality cleaning
-solutions for businesses and households.
-</p>
-
-<p>
-
-<b>Our Products:</b><br>
-
-Detergent Powder • Hand Wash • Toilet Cleaner • Dish Wash •  
-Liquid Detergent • Fabric Whitener • Room Spray
-
+We also supply industrial raw materials like
+Soda Ash, SLES, SLS Powder, AOS and many more.
 </p>
 
 </div>
 
 <br>
 
-<button onclick="openPopup('raw')" class="mainbtn">
+<button onclick="location.href='raw-material.html'" class="mainbtn">
 RAW MATERIAL
 </button>
 
-<button onclick="openPopup('product')" class="mainbtn">
+<button onclick="location.href='products.html'" class="mainbtn">
 OUR PRODUCTS
 </button>
 
 </div>
 
-
-<div id="popup" class="popup">
-
-<div class="popup-content">
-
-<span class="close" onclick="closePopup()">✖</span>
-
-<h2 id="popup-title"></h2>
-
-<p id="popup-text"></p>
-
-</div>
-
-</div>
-
-
 <footer>
 
-📞 WhatsApp: +91 8860710090
+📞 WhatsApp: +91 8860710090  
 <br>
 📧 jmd.customercareinfo@gmail.com
 
 <br><br>
 
-Thank you for visiting JMD Enterprises
+Thanks for visiting JMD Enterprises
 
 </footer>
-
-
-<script>
-
-function openPopup(type){
-
-document.getElementById("popup").style.display="flex";
-
-if(type==="raw"){
-document.getElementById("popup-title").innerText="Raw Materials Available";
-document.getElementById("popup-text").innerText=
-"Dolomite, Soda Ash, Industrial Salt, Sodium Meta Silicate, SLES, SLS Powder, AOS, CAPB, TSP Powder and many more raw materials available.";
-}
-
-if(type==="product"){
-document.getElementById("popup-title").innerText="Our Products";
-document.getElementById("popup-text").innerText=
-"Detergent Powder, Hand Wash, Toilet Cleaner, Dish Wash, Liquid Detergent, Fabric Whitener, Room Spray and Cleaning Products.";
-}
-
-}
-
-function closePopup(){
-document.getElementById("popup").style.display="none";
-}
-
-window.onbeforeunload=function(){
-return "🙏 Thanks for visiting JMD Enterprises";
-}
-
-</script>
 
 </body>
 </html>
